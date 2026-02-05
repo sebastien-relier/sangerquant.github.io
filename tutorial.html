@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<body>
+
+<head>
+	<link rel="stylesheet" href="page.css">
+	<meta charset="utf-8">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+
+
+<!-- create page header -->
+<header>
+
+<h1> SangerQuant </h1>
+<h2> Fast Quantification of Sequence Mismatch from Sanger files </h2>
+
+<button value="Total" type="button" class = "btn" id="Total"> <a href="path_to_file" download="proposed_file_name"> Windows </a></button>
+<button value="Total" type="button" class = "btn" id="Total"> Mac </button>
+<button value="Total" type="button" class = "btn" id="Total"> <a href="https://github.com/sebastien-relier/SangerQuant/releases/download/v1.0.0/ubuntu-sangerquant.zip" download="proposed_file_name"> Ubuntu </a> </button>
+
+
+</header>
+
+
+<!-- create navbar -->
+<div class="navbar">
+
+	<a href = "/resobs.html">Home</a>
+	
+	<a href="./about.html"> About </a>
+	<a href="./installation.html"> Installation </a>
+	<a href="./tutorial.html"> Tutorial </a>
+
+</div>
+
+
+
+<!-- create article content -->
+<article>
+
+
+	
+	<section>
+	
+		<h3> Tutorial </h3>	
+	
+		<h4> Import data </h4>
+		
+		<ul>
+			<li> Click on "File" of the menubar and click on "Import" </li>		
+			<li> Select one or more .ab1 files from sanger traces and click open. [Press shift + left click for multiple selections] </li>
+			<li> Press *open* to import the files </li>
+		</ul>
+		
+		
+		<h4> Explore Traces </h4>
+		
+		<ul>
+			<li> Select a single file from the list on the left to display the corresponding trace </li>	
+			<li> Click on the scrollbar above the trace to navigate along the sequence | Alternatively, use the mouse wheel </li>
+			<li> To navigate directly to a specific sequence of interest, type the query sequence in the text box below the trace </li>
+		</ul>
+		
+		
+		<h4> Mismatch quantification </h4>
+			
+			<h5> Peak height quantification from single traces </h5>
+			
+		<ul>
+			<li> Left-click on a peak from the trace to quantify peak heights, raw value will appear below the sample list on the bottom left </li>	
+		</ul>		
+		
+	
+			<h5> Batch quantification from multiple files </h5>
+			
+			
+
+		<ul>
+			<li> Navigate to Analyses > Quantify mismatch in the menu </li>
+			<li> In the popup window, enter your sequence in the top textbox.	| Replace the nucleotides you want to quantify with an "N". ie. GCATGGCCGTTCTT > GCATGGCNGTTCTT </li>
+			<li> From the list, use your left mouse button to select the samples you want to analyze </li>
+			<li> Select the mutation to quantify from the combobox </li>
+			<li> Press Preview to display the quantification results in the table </li>
+			<li> To export: Use the Export button to save all data | right-click on specific rows, select Copy, and paste into your favorite worksheet software </li>
+		</ul>		
+		
+		
+		
+	
+
+
+		
+		
+		
+	
+		<h4> De novo mismatch identification </h4>
+		
+		<ul>
+			<li> Navigate to Analyses > Find mismatches in the menu </li>
+			<li> From the list, use your left mouse button to select the samples you want to analyze </li>
+			<li> Paste your reference sequence in FASTA format into the textbox below the sample list </li>
+			<li> Use your scroll wheel to zoom in or out </li>
+			<li> Left click on a bar of interest to display its position in the main window </li>
+			<li> Click the Export button to save the plot </li>
+		</ul>		
+		
+		<h4> Edit the Sanger Traces </h4>
+			<h5> Trim low quality sequence </h5>
+		
+				<ul>
+					<li> Navigate to Edit > Trim </li>
+					<li> From the list, use your left mouse button to select the traces you want to trim </li>
+					<li> A plot showing Peak Quality (Phred Score) vs. Peak Position will appear. Higher values indicate better quality </li>
+					<li> Left-click on the red vertical lines and drag them along the x-axis | The area between the red lines will be kept, while the outer shaded areas will be trimmed. </li>
+					<li> Click Trim to apply the changes </li>
+					<li> (Optional) To undo, click Untrim. </li>
+				</ul>	
+	
+	</section>
+
+
+
+</article>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

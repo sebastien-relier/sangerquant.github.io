@@ -1,0 +1,125 @@
+body{
+background-color: #FbFbFb;
+font-family: helvetica;
+
+}
+
+header {
+	text-align: center;
+	color: black;
+	margin-bottom: 0px;
+	background-color: #FbFbFb;
+}
+
+
+/* ------- set up link to download ------- */
+a {
+  color: black;
+  background-color: None;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:link {
+color: white;
+text-decoration: none;
+}
+
+
+a:visited {
+color: white;
+text-decoration: none;
+}
+
+/* --------------------------------------- */
+
+
+
+
+/* ------ style of the navbar -------- */
+.navbar {
+	background: #1b9090;
+	width:100%;
+	color:white;
+	height: 30px;
+	margin: 0px;	
+}
+
+
+
+
+/* --------------------------------- */
+
+
+
+article {	
+	margin-left: 15%;
+	margin-right: 15%;
+	
+	background-color: #FbFbFb;
+	margin-top: 0px;
+}
+
+section {
+margin-left: 5%;
+
+}
+
+h1 {
+padding-top: 50px;
+font-size: 32px;
+color: black;
+}
+
+h2 {
+
+font-size: 20px;
+color: darkgrey;
+padding-bottom: 50px;
+font-style: italic
+}
+
+
+h3 {
+margin-top 15px;
+text-decoration: underline;
+font-size: 22px;
+color:#1b9090;
+font-weight: bold;
+}
+
+h4 {
+font-size: 20px;
+padding-bottom: 0px;
+font-style: italic;
+color: black
+
+
+}
+
+h5 {
+font-size: 16px;
+text-decoration: underline; 
+}
+
+.btn {
+border-color: black;
+border-width: 1px;
+color: black;
+border-radius: 5px;
+margin-bottom: 20px;
+background-color: rgba(0,0,0,0);
+text-align: center;
+margin-left: 5%;
+margin-right: 5%;
+font-size: 18px;
+width: 15%;
+}
+
+
+li {
+margin-top: 3px;
+padding: 2px;
+font-size: 16px
+
+}
