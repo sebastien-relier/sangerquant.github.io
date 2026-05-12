@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RNA/DNA Modifications | SangerQuant</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Additional styles specific to this page */
+        .content {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            line-height: 1.8;
+        }
+        h1 {
+            color: #1976d2;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        h2 {
+            color: #1976d2;
+            margin-top: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #1976d2;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 2rem;
+            color: #1976d2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1> RNA/DNA Modifications</h1>
+
+        <p>
+            RNA/DNA modifications are chemical alterations to the nucleobases that make up RNA and DNA.
+            These modifications play a critical role in regulating gene expression through transcriptional or post-transcriptional mechanisms.
+            To date, hundreds of such modifications have been described, some of which are conserved across evolution.
+        </p>
+
+        <p>
+            Certain modifications can be detected using Sanger sequencing with specialized protocols that either induce or prevent base mutations at modification sites.
+            For example, bisulfite sequencing converts unmethylated cytosines into uracils, which are then read as thymine during sequencing.
+            This method is applicable to both DNA and RNA.
+        </p>
+
+        <p>
+            Other protocols have been developed to detect and quantify RNA modifications.
+            Recently, sodium borohydride (NaBH₄)and sodium cyanoborohydride (NaBH₃CN) have been used to map RNA acetylation.
+            Sodium borohydride converts <ac4C into H4-ac4C, leading to base misincorporation during reverse transcription.
+            As a result, these modifications appear as C:T mutations in sequencing data.
+        </p>
+
+        <p>
+            Sodium borohydride has also been employed to map other modifications.
+            For instance, it can detect N1-methyladenosine (m1A), a modification prevalent in human tRNA and 28S rRNA.
+            Sodium borohydride-mediated reduction of m1A enhances the A-to-T mutation rate at methylation sites.
+            Additionally, it can be used to map m7G.
+        </p>
+
+        <p>
+            Finally, m1acp3ψ, a triple modification located at position 1248 of 18S ribosomal RNA, can be detected without prior chemical treatment of RNA.
+            This modification induces Watson-Crick base-pairing alterations during reverse transcription, resulting in <strong>T-to-C mutations</strong> in sequencing data.
+        </p>
+
+        <h2> RNA/DNA Modifications Quantifiable with Sanger Sequencing </h2>
+        
+			<table>
+            <thead>
+                <tr>
+                    <th>Modification</th>
+                    <th>Source</th>
+                    <th>Chemical Treatment</th>
+                    <th>Mutation at modification site</th>
+                    <th> Pubmed Reference (PMID)
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>m5C</td>
+                    <td>RNA / DNA</td>
+                    <td>Bisulfite</td>
+                    <td> m5C remains C, C becomes T</td>
+                    <td> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC2632927/"> 19059995 </a> </td>
+                </tr>
+                <tr>
+                    <td>ac4C</td>
+                    <td>RNA</td>
+                    <td>NaBH₄ or NaCNBH₃</td>
+                    <td>C &gt; T</td>
+                    <td> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11182010/"> 38697668 </a> </td>
+                </tr>
+                <tr>
+                    <td>m1A</td>
+                    <td>RNA</td>
+                    <td>NaBH₄</td>
+                    <td>A &gt; T</td>
+                    <td> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC11019740/"> 38531647 </a> </td>
+                </tr>
+                <tr>
+                    <td>m7G</td>
+                    <td>RNA</td>
+                    <td>NaBH₄</td>
+                    <td> G &gt; T or G &gt; C</td>
+                    <td> <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC6588483/"> 31031084 </a> </td>
+                </tr>
+                <tr>
+                    <td>m1acp3U</td>
+                    <td>RNA</td>
+                    <td>None</td>
+                    <td>T &gt; C</td>
+                    <td> <a href="https://pubmed.ncbi.nlm.nih.gov/32375039/"> 32375039 </a> </td>
+                </tr>
+            </tbody>
+        </table>
+	
+        <p>
+            <em>Table 1.</em> Summary of RNA/DNA modifications quantifiable using Sanger sequencing.
+        </p>
+
+        <a href="index.html" class="back-link">← Back to Home</a>
+    </div>
+</body>
+</html>
